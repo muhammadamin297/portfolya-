@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfoliya — Muhammadamin Qobilov</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f0f19;
+      color: #f1f1f1;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 5%;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background: #0f0f19;
+      z-index: 1000;
+    }
+    header nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+    }
+    header nav a:hover {
+      border-bottom: 2px solid #4f46e5;
+    }
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 100vh;
+      padding: 0 5%;
+    }
+    .hero-text {
+      max-width: 50%;
+    }
+    .hero-text h1 {
+      font-size: 3rem;
+      margin: 0.5rem 0;
+    }
+    .hero-text h2 {
+      font-size: 1.5rem;
+      color: #aaa;
+    }
+    .hero img {
+      border-radius: 50%;
+      border: 8px solid #1f1f2e;
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+    }
+    section {
+      padding: 5% 10%;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #4f46e5;
+    }
+    .about {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .about-text {
+      max-width: 50%;
+    }
+    .skills span {
+      display: inline-block;
+      background: #1f1f2e;
+      color: #fff;
+      padding: 0.4rem 0.8rem;
+      margin: 0.3rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
+      background: #4f46e5;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #1f1f2e;
+      color: #aaa;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Portfoliya</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experiences</a>
+      <a href="#projects">Portfolio</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <p>Hello I'm</p>
+      <h1>Muhammadamin Qobilov</h1>
+      <h2>Backend Developer</h2>
+      <p>📧 muhammadaminkabilov032@gmail.com</p>
+      <p>📞 +998(95)-114-11-81</p>
+      <p>📍 Uzbekistan, City</p>
+
+
+
+      <div class="social-row">
+  <!-- Telegram -->
+  <a class="social-link" href="https://t.me/Kabilov_MM" target="_blank" aria-label="Telegram">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M9.04 15.87l-.39 5.5c.56 0 .8-.24 1.09-.53l2.62-2.5
+      5.43 3.97c1 .55 1.71.26 1.96-.92l3.55-16.64c.32-1.49-.54-2.07-1.5-1.72
+      l-20.7 7.97c-1.41.55-1.39 1.34-.24 1.7l5.29 1.65 12.29-7.74c.58-.38
+      1.1-.17.67.21l-9.99 8.56z" fill="currentColor"/>
+    </svg>
+  </a>
+
+  <!-- Instagram -->
+  <a class="social-link" href="https://instagram.com/kabilov_708" target="_blank" aria-label="Instagram">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5
+      0 0 1 5-5zm5 6.2a4.8 4.8 0 1 0 0 9.6 4.8 4.8 0 0 0 0-9.6zm5.6-2.6a1.1
+      1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2z" fill="currentColor"/>
+    </svg>
+  </a>
+
+  <!-- GitHub -->
+  <a class="social-link" href="https://github.com/muhammadamin297" target="_blank" aria-label="GitHub">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.41 7.86 10.94.57.11.78-.25.78-.56
+      0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.27-1.68-1.27-1.68
+      -1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.25 3.33.96.1-.75.4-1.25.73-1.54
+      -2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.06
+      0 0 .97-.31 3.18 1.18a11.16 11.16 0 0 1 2.9-.39c.98.01 1.97.13 2.9.39
+      2.2-1.49 3.17-1.18 3.17-1.18.62 1.59.23 2.77.11 3.06.74.8 1.18 1.83
+      1.18 3.1 0 4.44-2.7 5.41-5.27 5.69.41.36.77 1.07.77 2.16
+      0 1.56-.01 2.82-.01 3.2 0 .31.2.68.79.56A11.52 11.52 0 0 0 23.5 12
+      C23.5 5.65 18.35.5 12 .5z" fill="currentColor"/>
+    </svg>
+  </a>
+
+  <!-- Gmail -->
+  <a class="social-link" href="mailto:muhammadaminkabilov032@gmail.com" target="_blank" aria-label="Gmail">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0
+      1.1.9 2 2 2h16c1.1 0 2-.9
+      2-2V6c0-1.1-.9-2-2-2zm0
+      4l-8 5-8-5V6l8
+      5 8-5v2z" fill="currentColor"/>
+    </svg>
+  </a>
+</div>
+
+<style>
+.social-row {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link {
+  display: inline-flex;
+  width: 20px;   /* ikon o‘lchami */
+  height: 20px;
+  color: #e6e6e6;
+  transition: transform 0.2s;
+}
+
+.social-link:hover {
+  transform: scale(1.2);
+  color: #ffffff;
+}
+
+.social-link svg {
+  width: 100%;
+  height: 100%;
+}
+</style>
+
+
+
+
+
+
+    </div>
+    <div class="hero-img">
+      <img src="/media/default/muhammadamin.jpg" alt="Profil rasmi">
+    </div>
+  </section>
+
+
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="/media/default/img.png" alt="About" style="width:300px;">
+    </div>
+    <div class="about-text">
+
+      <h2>About Me</h2>
+      <p>I'm a backend developer with a passion for building robust, scalable, and efficient applications. I enjoy solving complex problems and creating reliable systems that power modern web experiences.</p>
+      <div class="skills">
+        <span>Python</span>
+        <span>Django</span>
+        <span>DRF</span>
+        <span>FastAPI</span>
+        <span>HTML</span>
+        <span>CSS</span>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Backend Development</li>
+      <li>API Integration</li>
+      <li>Database Design</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Experiences</h2>
+    <p>Najot Ta'lim — Amolyatchi </p>
+  </section>
+
+<!--  <section id="projects">-->
+<!--    <h2>Portfolio</h2>-->
+<!--    <p>Avto salon: <a href="https://github.com/muhammadamin297/avtasalon">Avto Salon</a></p>-->
+<!--  </section>-->
+
+<section id="projects">
+  <h2>Portfolio</h2>
+
+  <p>Avto Salon: <a href="https://github.com/muhammadamin297/avtasalon">Avto Salon</a></p>
+  <p>QR Code: <a href="https://github.com/muhammadamin297/qrcode">Kuar Kod Loyihasi)</a></p>
+  <p>TaksaPark: <a href="https://github.com/muhammadamin297/taksapark">TaksaPark</a></p>
+</section>
+
+
+  <section id="reviews">
+    <h2>Reviews</h2>
+    <p>.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Telegram: <a href="https://t.me/Kabilov_MM">telegram</a></p>
+    <p>GitHub: <a href="https://github.com/muhammadamin297">git hub</a></p>
+      <p>Email: <a href="mailto:muhammadaminkabilov032@gmail.com">muhammadaminkabilov032@gmail.com</a></p>
+
+  </section>
+
+
+
+  <footer>
+  <p>© 2025 Muhammadamin Qobilov</p>
+  </footer>
+</body>
+</html>
+
+
+
+
+<a href="#" id="download" class="btn-download">⬇ Download PDF</a>
+
+<style>
+  .btn-download {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(45deg, #4CAF50, #2E7D32);
+    transition: 0.3s;
+  }
+  .btn-download:hover {
+    background: linear-gradient(45deg, #2E7D32, #4CAF50);
+  }
+</style>
+
+<!-- Kutubxona -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+<script>
+  document.getElementById("download").addEventListener("click", (e) => {
+    e.preventDefault();
+
+    // Butun sahifani tanlaymiz
+    const element = document.body;
+
+    // To‘liq ishlaydigan sozlamalar
+    const opt = {
+      margin:       0,
+      filename:     'Muhammadamin_Portfolio.pdf',
+      image:        { type: 'jpeg', quality: 1 },
+      html2canvas:  { scale: 2, useCORS: true, scrollY: 0 },
+      jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+    };
+
+    html2pdf().set(opt).from(element).save();
+  });
+</script>
