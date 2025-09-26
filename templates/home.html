@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="uz">
 <head>
@@ -105,6 +106,7 @@
   <header>
     <div class="logo">Portfoliya</div>
     <nav>
+        <a href="/admin/">Login</a>
       <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
@@ -112,6 +114,7 @@
       <a href="#projects">Portfolio</a>
       <a href="#reviews">Reviews</a>
       <a href="#contact">Contact</a>
+
     </nav>
   </header>
 
@@ -206,10 +209,9 @@
 
 
 
-
     </div>
     <div class="hero-img">
-      <img src="/media/default/muhammadamin.jpg" alt="Profil rasmi">
+      <img src="{% static 'ozm.jpeg' %}" alt="Profil rasmi">
     </div>
   </section>
 
@@ -219,6 +221,8 @@
       <img src="/media/default/img.png" alt="About" style="width:300px;">
     </div>
     <div class="about-text">
+
+
 
       <h2>About Me</h2>
       <p>I'm a backend developer with a passion for building robust, scalable, and efficient applications. I enjoy solving complex problems and creating reliable systems that power modern web experiences.</p>
@@ -258,13 +262,29 @@
 
   <p>Avto Salon: <a href="https://github.com/muhammadamin297/avtasalon">Avto Salon</a></p>
   <p>QR Code: <a href="https://github.com/muhammadamin297/qrcode">Kuar Kod Loyihasi)</a></p>
-  <p>TaksaPark: <a href="https://github.com/muhammadamin297/taksapark">TaksaPark</a></p>
+  <p>TaksaPark: <a href="https://github.com/muhammadamin297/taksapark">TaksaPark</a></p><h2></h2>
+<ul>
+  {% for item in portfolio %}
+    <li>
+      {{ item.title }}
+      {% if item.github_link %}
+        - <a href="{{ item.github_link }}" target="_blank">GitHub</a>
+      {% endif %}
+    </li>
+  {% empty %}
+    <li>Hozircha loyihalar qo‘shilmagan</li>
+  {% endfor %}
+</ul>
+
 </section>
+
+
+
 
 
   <section id="reviews">
     <h2>Reviews</h2>
-    <p>.</p>
+    <p>“Through this portfolio, I present my projects, experience, and skills. Your feedback is very important to me!”.</p>
   </section>
 
   <section id="contact">
@@ -274,7 +294,6 @@
       <p>Email: <a href="mailto:muhammadaminkabilov032@gmail.com">muhammadaminkabilov032@gmail.com</a></p>
 
   </section>
-
 
 
   <footer>
@@ -325,3 +344,9 @@
     html2pdf().set(opt).from(element).save();
   });
 </script>
+
+
+
+
+
+
